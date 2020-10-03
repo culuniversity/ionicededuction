@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-title>Agregar Tarea</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <form [formGroup]="formTareas">
+    <ion-item>
+      <ion-label position="stacked">Ingresar Tarea</ion-label>
+      <ion-input formControlName="actividad"> </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-datetime formControlName="hora" display-format="h:mm A" picker-format="h:mm A" value="1990-02-19T07:43Z">
+      </ion-datetime>
+    </ion-item>
+    <ion-button expand="block" (click)="guardar(formTareas.value)">Guardar</ion-button>
+  </form>
+</ion-content>
+<ion-footer>
+  www.data.com
+</ion-footer>

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "unicul-7faee": {
+      "hosting": {
+        "app": [
+          "unicul-7faee"
+        ]
+      }
+    }
+  }
+}
